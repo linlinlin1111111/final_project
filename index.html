@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://unpkg.com/feather-icons"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Join the rhythm</title>
+<title>Explore the New Collection</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- navbar section -->
      <nav class="navbar">
-        <a href="/" class="navbar__logo">RHYTHM</a>
+        <a href="/" class="navbar__logo">RICK OWENS</a>
         <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -16,11 +19,43 @@
         </div>
       <div class="navbar__menu">
         <a href="/" class="navbar__link">Home</a>
-        <a href="/styles.html" class="navbar__link">Styles</a>
-        <a href="/instructors.html" class="navbar__link">Instructors</a>
-        <a href="/bookclass.html" class="navbar__link">Book Class</a>
+        <a href="/collection.html" class="navbar__link">Collection</a>
+        <a href="/campaign.html" class="navbar__link">Campaign</a>
+        <a href="/about.html" class="navbar__link">About</a>
       </div>
      </nav>
+    <!--hero section-->
+    <div class="hero">
+      <div class="hero__content">
+        <h1>Rick Owens</h1>
+        <p>Explore the New Collection</p>
+        <a href="/" class="button">Discover</a>
+      </div>
+    </div>
+    <!--collection section-->
+    <div class="collection">
+<div class="collection__container">
+  <div>
+    <p class="topLine">Collection</p>
+    <h1 class="collections__heading">Our Lines</h1>
+    <div class="collection__features">
+      <p class="collection__feature"><i data-feather="chevron-down"></i> Avant-Garde</p>
+      <p class="collection__feature"><i data-feather="chevron-down"></i> Streetwear</p>
+      <p class="collection__feature"><i data-feather="chevron-down"></i> Leather Goods</p>
+      <p class="collection__feature"><i data-feather="chevron-down"></i> Footwear</p>
+    </div>
+  </div>
+
+  <div>
+    <img src="./collection.jpg" alt="stores" class="collection__img" />
+  </div>
+</div>
+    
+    </div>
+    <script src="app.js"></script>
+    <script>
+      feather.replace()
+    </script>
     
 </body>
 
