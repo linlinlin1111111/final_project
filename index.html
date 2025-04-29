@@ -168,42 +168,39 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <script src="./app.js"></script>
-<body>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      feather.replace();
-  
-      // Email form: STOP RELOAD!
-      const emailForm = document.querySelector('form.animate-email');
-      if (emailForm) {
-        emailForm.addEventListener('submit', function (e) {
-          e.preventDefault(); // 
-          alert('Thank you for subscribing!');
-        });
-      }
-  
-      // Заглушки для кнопок (View / Discover)
-      const allButtons = document.querySelectorAll('.membership__btn');
-      allButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-          e.preventDefault();
-          alert('This feature is coming soon.');
-        });
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    feather.replace();
+
+    // Email form imitation
+    const emailForm = document.querySelector('form.animate-email');
+    if (emailForm) {
+      emailForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you for subscribing!');
       });
-  
-      // Заглушки для ссылок
-      const fakeLinks = document.querySelectorAll('a[href="/"]');
-      fakeLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          alert('Navigating to this section is not yet available.');
-        });
+    }
+
+    // Buttons imitation
+    const allButtons = document.querySelectorAll('.membership__btn, .button');
+    allButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('This feature is coming soon.');
       });
     });
-  </script>
-  
+
+    // Links imitation
+    const fakeLinks = document.querySelectorAll('a[href="/"]');
+    fakeLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Navigating to this section is not yet available.');
+      });
+    });
+  });
+</script>
 
 </body>
-
 </html>
