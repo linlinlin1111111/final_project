@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+
     <!-- navbar section -->
      <nav class="navbar">
         <a href="/" class="navbar__logo">RICK OWENS</a>
@@ -64,7 +64,7 @@
     <!--membership section-->
     <div class="membership">
       <h1 class="animate-membership">Explore Collections</h1>
-      <p class="membership__desc animate-membership">Timeless piecec. Limited releases.</p>
+      <p class="membership__desc animate-membership">Timeless pieces. Limited releases.</p>
       <div class="membership__wrapper">
 
         <div class="membership__card animated-card">
@@ -96,17 +96,17 @@
 
     <div class="designer__card animate-designer">
       <img src="model2.jpg" alt="Model 01" class="designer__img">
-      <h2 class="Ash Grey">Ash Grey</h2>
+      <h2 class="designer__name">Ash Grey</h2>
     </div>
 
     <div class="designer__card animate-designer">
       <img src="model1.jpg" alt="Model 02" class="designer__img">
-      <h2 class="Silas Void">Silas Void</h2>
+      <h2 class="designer__name">Silas Void</h2>
     </div>
 
     <div class="designer__card animate-designer">
       <img src="model3.jpg" alt="Model 03" class="designer__img">
-      <h2 class="Orion Dust">Orion Dust</h2>
+      <h2 class="designer__name">Orion Dust</h2>
     </div>
 
   </div>
@@ -140,33 +140,69 @@
     </div>
     <div class="footer__links">
       <h2 class="footer__title">Contact</h2>
-      <a href="/" class="footer__link">Support</a>
-      <a href="/" class="footer__link">Press Inquiries</a>
-      <a href="/" class="footer__link">Store Locator</a>
+      <a href="https://www.rickowens.eu/en/US/customer-service" target="_blank" class="footer__link">Support</a>
+      <a href="https://www.rickowens.eu/en/US/press" target="_blank" class="footer__link">Press Inquiries</a>
+      <a href="https://www.rickowens.eu/en/US/store-locator" target="_blank" class="footer__link">Store Locator</a>
     </div>
-
+    
     <div class="footer__links">
       <h2 class="footer__title">Information</h2>
-      <a href="/" class="footer__link">Privacy Policy</a>
-      <a href="/" class="footer__link">Terms of Service</a>
-      <a href="/" class="footer__link">Careers</a>
+      <a href="https://www.rickowens.eu/en/US/privacy" target="_blank" class="footer__link">Privacy Policy</a>
+      <a href="https://www.rickowens.eu/en/US/terms" target="_blank" class="footer__link">Terms of Service</a>
+      <a href="https://www.rickowens.eu/en/US/careers" target="_blank" class="footer__link">Careers</a>
     </div>
-
+    
     <div class="footer__links">
       <h2 class="footer__title">Social</h2>
-      <a href="/" class="footer__link">Instagram</a>
-      <a href="/" class="footer__link">YouTube</a>
-      <a href="/" class="footer__link">Twitter</a>
+      <a href="https://www.instagram.com/rickowensonline/" target="_blank" class="footer__link">Instagram</a>
+      <a href="https://www.youtube.com/@RickOwensOnline" target="_blank" class="footer__link">YouTube</a>
+      <a href="https://twitter.com/officialrickow" target="_blank" class="footer__link">Twitter</a>
     </div>
+    
   </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="app.js"></script>
-    <script>
-      feather.replace()
-    </script>
-    
-</body>
+<script src="app.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+<body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      feather.replace();
+  
+      // Email form: STOP RELOAD!
+      const emailForm = document.querySelector('form.animate-email');
+      if (emailForm) {
+        emailForm.addEventListener('submit', function (e) {
+          e.preventDefault(); // 💥 ОСТАНАВЛИВАЕТ ОБНОВЛЕНИЕ
+          alert('Thank you for subscribing!');
+        });
+      }
+  
+      // Заглушки для кнопок (View / Discover)
+      const allButtons = document.querySelectorAll('.membership__btn');
+      allButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('This feature is coming soon.');
+        });
+      });
+  
+      // Заглушки для ссылок
+      const fakeLinks = document.querySelectorAll('a[href="/"]');
+      fakeLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Navigating to this section is not yet available.');
+        });
+      });
+    });
+  </script>
+  
+
+</body>
 </html>

@@ -61,14 +61,13 @@ gsap.from('.animate-services', {
   }); 
 
   gsap.from('.animate-designer', {
-    scrollTrigger: '.animate-designer', // активируем при прокрутке до элемента
-    duration: 1,
+    scrollTrigger: '.animate-designer',
+    duration: 0.6,
     opacity: 0,
-    y: -150,
-    stagger: 0.3,
-    delay: 0.2
+    y: 50,
+    stagger: 0.3
   });
-
+  
   gsap.from('.animate-email', {
     scrollTrigger: '.animate-email',
     duration: 0.8,
