@@ -158,4 +158,130 @@ font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.collection__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services_img {
+    width: 100%;
+    max-width: 1000px; 
+    height: auto;
+    display: block;
+}
+
+.topLine {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.collections__heading {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+
+}
+
+
+.collection__features {
+    list-style: none;
+}
+
+.collection__feature {
+    margin-bottom: 1.5rem;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+.feather {
+    margin-right: 0.5rem; /* отступ справа */
+    color: #000;   /* цвет иконки (можешь поставить свой) */
+    width: 20px;           /* аккуратный размер */
+    height: 20px;
+    vertical-align: middle; /* чтобы иконка шла по центру с текстом */
+  }
+
+  @media screen and (max-width: 768px) {
+    .collection__container{
+        grid-template-columns: 1fr;
+    } 
+  }
+
+
+  /*membership*/
+  .membership {
+    background: #000; /* черный фон */
+    color: #fff; /* белый текст */
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .membership__wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .membership__card {
+    border: 1px solid #fff; /* тонкая белая рамка */
+    padding: 2rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .membership__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  
+  .membership__desc2 {
+    font-size: 0.9rem;
+    color: #ccc; /* сероватый текст */
+  }
+  
+  .membership__btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .membership__btn:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .feather {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+  }
+  .membership__desc {
+    margin-top: 1.5rem; /* или даже 2rem */
+    font-size: 1rem;
+    color: #ccc;
+    letter-spacing: 1px;
+  }
+  .membership h1 {
+    margin-bottom: 2rem; /* больше пространства после заголовка */
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  
