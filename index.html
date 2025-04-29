@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Explore the New Collection</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- navbar section -->
@@ -27,28 +29,28 @@
     <!--hero section-->
     <div class="hero">
       <div class="hero__content">
-        <h1>Rick Owens</h1>
-        <p>A New Form of Expression</p>
-        <a href="/" class="button">Discover</a>
+        <h1 class="animate-hero">Rick Owens</h1>
+        <p class="animate-hero">A New Form of Expression</p>
+        <a href="/" class="button animate-hero">Discover</a>
       </div>
     </div>
     <!--collection section-->
     <div class="collection">
 <div class="collection__container">
   <div>
-    <p class="topLine">Collection</p>
-    <h1 class="collections__heading">Our Lines</h1>
+    <p class="topLine animate-services">Collection</p>
+    <h1 class="collections__heading animate-services">Our Lines</h1>
     <div class="collection__features">
-      <p class="collection__feature"><i data-feather="chevron-down"></i> Avant-Garde</p>
-      <p class="collection__feature"><i data-feather="chevron-down"></i> Streetwear</p>
-      <p class="collection__feature"><i data-feather="chevron-down"></i> Leather Goods</p>
-      <p class="collection__feature"><i data-feather="chevron-down"></i> Footwear</p>
+      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Avant-Garde</p>
+      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Streetwear</p>
+      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Leather Goods</p>
+      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Footwear</p>
     </div>
   </div>
 
   
   <div class="collection__item">
-    <img src="collection.jpg" class="services_img" />
+    <img src="collection.jpg" class="services_img animate-img" />
 
  
     
@@ -61,25 +63,25 @@
 
     <!--membership section-->
     <div class="membership">
-      <h1>Explore Collections</h1>
-      <p class="membership__desc">Timeless piecec. Limited releases.</p>
+      <h1 class="animate-membership">Explore Collections</h1>
+      <p class="membership__desc animate-membership">Timeless piecec. Limited releases.</p>
       <div class="membership__wrapper">
 
-        <div class="membership__card">
+        <div class="membership__card animated-card">
           <i data-feather="chevron-down"></i>
           <h2 class="membership__title">Fall / Winter</h2>
           <p class="membership__desc2">Sculptural silhouettes for colder realms.</p>
           <button class="membership__btn">View</button>
         </div>
       
-        <div class="membership__card">
+        <div class="membership__card animated-card">
           <i data-feather="chevron-down"></i>
           <h2 class="membership__title">Spring / Summer</h2>
           <p class="membership__desc2">Minimalist flow. Freedom in form.</p>
           <button class="membership__btn">View</button>
         </div>
       
-        <div class="membership__card">
+        <div class="membership__card animated-card">
           <i data-feather="chevron-down"></i>
           <h2 class="membership__title">Limited Editions</h2>
           <p class="membership__desc2">Unique, unrepeated masterpieces.</p>
@@ -92,17 +94,17 @@
 
   <div class="designers__wrapper">
 
-    <div class="designer__card">
+    <div class="designer__card animate-designer">
       <img src="model2.jpg" alt="Model 01" class="designer__img">
       <h2 class="Ash Grey">Ash Grey</h2>
     </div>
 
-    <div class="designer__card">
+    <div class="designer__card animate-designer">
       <img src="model1.jpg" alt="Model 02" class="designer__img">
       <h2 class="Silas Void">Silas Void</h2>
     </div>
 
-    <div class="designer__card">
+    <div class="designer__card animate-designer">
       <img src="model3.jpg" alt="Model 03" class="designer__img">
       <h2 class="Orion Dust">Orion Dust</h2>
     </div>
@@ -116,9 +118,9 @@
 <!--email section-->
 <div class="email">
   <div class="email__content">
-    <h1>Exclusive Preview</h1>
-    <p>Join to receive early access to unreleased pieces.</p>
-    <form action="#">
+    <h1 class="animate-email">Exclusive Preview</h1>
+    <p class="animate-email">Join to receive early access to unreleased pieces.</p>
+    <form action="#" class="animate-email">
       <div class="form__wrap">
         <label for="email">
           <input type="email" placeholder="Enter your email" id="email">
@@ -129,6 +131,37 @@
   </div>
 </div>
 <!--footer section-->
+<div class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__desc">
+      <h1>RICK OWENS</h1>
+      <p>Maison Rick Owens — Paris, France</p>
+      <p id="phone">305 - 123 - 4567</p>
+    </div>
+    <div class="footer__links">
+      <h2 class="footer__title">Contact</h2>
+      <a href="/" class="footer__link">Support</a>
+      <a href="/" class="footer__link">Press Inquiries</a>
+      <a href="/" class="footer__link">Store Locator</a>
+    </div>
+
+    <div class="footer__links">
+      <h2 class="footer__title">Information</h2>
+      <a href="/" class="footer__link">Privacy Policy</a>
+      <a href="/" class="footer__link">Terms of Service</a>
+      <a href="/" class="footer__link">Careers</a>
+    </div>
+
+    <div class="footer__links">
+      <h2 class="footer__title">Social</h2>
+      <a href="/" class="footer__link">Instagram</a>
+      <a href="/" class="footer__link">YouTube</a>
+      <a href="/" class="footer__link">Twitter</a>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
     <script>
       feather.replace()
