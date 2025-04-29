@@ -1,206 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore the New Collection</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/feather-icons"></script>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Explore the New Collection</title>
-<link rel="stylesheet" href="./style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
-
 </head>
 
-    <!-- navbar section -->
-     <nav class="navbar">
-        <a href="/" class="navbar__logo">RICK OWENS</a>
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-      <div class="navbar__menu">
-        <a href="/" class="navbar__link">Home</a>
-        <a href="/collection.html" class="navbar__link">Collection</a>
-        <a href="/campaign.html" class="navbar__link">Campaign</a>
-        <a href="/about.html" class="navbar__link">About</a>
-      </div>
-     </nav>
-    <!--hero section-->
-    <div class="hero">
-      <div class="hero__content">
-        <h1 class="animate-hero">Rick Owens</h1>
-        <p class="animate-hero">A New Form of Expression</p>
-        <a href="/" class="button animate-hero">Discover</a>
-      </div>
+<body>
+
+  <!-- navbar section -->
+  <nav class="navbar">
+    <a href="/" class="navbar__logo">RICK OWENS</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-    <!--collection section-->
-    <div class="collection">
-<div class="collection__container">
-  <div>
-    <p class="topLine animate-services">Collection</p>
-    <h1 class="collections__heading animate-services">Our Lines</h1>
-    <div class="collection__features">
-      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Avant-Garde</p>
-      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Streetwear</p>
-      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Leather Goods</p>
-      <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Footwear</p>
+    <div class="navbar__menu">
+      <a href="/" class="navbar__link">Home</a>
+      <a href="/collection.html" class="navbar__link">Collection</a>
+      <a href="/campaign.html" class="navbar__link">Campaign</a>
+      <a href="/about.html" class="navbar__link">About</a>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="animate-hero">Rick Owens</h1>
+      <p class="animate-hero">A New Form of Expression</p>
+      <a href="/" class="button animate-hero">Discover</a>
     </div>
   </div>
 
+  <!-- collection section -->
+  <div class="collection">
+    <div class="collection__container">
+      <div>
+        <p class="topLine animate-services">Collection</p>
+        <h1 class="collections__heading animate-services">Our Lines</h1>
+        <div class="collection__features">
+          <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Avant-Garde</p>
+          <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Streetwear</p>
+          <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Leather Goods</p>
+          <p class="collection__feature animate-services"><i data-feather="chevron-down"></i> Footwear</p>
+        </div>
+      </div>
+
+      <div class="collection__item">
+        <img src="collection.jpg" class="services_img animate-img" />
+      </div>
+    </div>
+  </div>
+
+  <!-- membership section -->
+  <div class="membership">
+    <h1 class="animate-membership">Explore Collections</h1>
+    <p class="membership__desc animate-membership">Timeless pieces. Limited releases.</p>
+    <div class="membership__wrapper">
+      <div class="membership__card animated-card">
+        <i data-feather="chevron-down"></i>
+        <h2 class="membership__title">Fall / Winter</h2>
+        <p class="membership__desc2">Sculptural silhouettes for colder realms.</p>
+        <button class="membership__btn">View</button>
+      </div>
+      <div class="membership__card animated-card">
+        <i data-feather="chevron-down"></i>
+        <h2 class="membership__title">Spring / Summer</h2>
+        <p class="membership__desc2">Minimalist flow. Freedom in form.</p>
+        <button class="membership__btn">View</button>
+      </div>
+      <div class="membership__card animated-card">
+        <i data-feather="chevron-down"></i>
+        <h2 class="membership__title">Limited Editions</h2>
+        <p class="membership__desc2">Unique, unrepeated masterpieces.</p>
+        <button class="membership__btn">View</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- designers section -->
+  <section class="designers">
+    <h1>Meet Our Designers</h1>
+    <p class="designers__desc">Raw elegance and unstructured luxury, redefined for the modern era.</p>
+    <div class="designers__wrapper">
+      <div class="designer__card animate-designer">
+        <img src="model2.jpg" alt="Model 01" class="designer__img">
+        <h2 class="designer__name">Ash Grey</h2>
+      </div>
+      <div class="designer__card animate-designer">
+        <img src="model1.jpg" alt="Model 02" class="designer__img">
+        <h2 class="designer__name">Silas Void</h2>
+      </div>
+      <div class="designer__card animate-designer">
+        <img src="model3.jpg" alt="Model 03" class="designer__img">
+        <h2 class="designer__name">Orion Dust</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- email section -->
+  <div class="email">
+    <div class="email__content">
+      <h1 class="animate-email">Exclusive Preview</h1>
+      <p class="animate-email">Join to receive early access to unreleased pieces.</p>
+      <form action="#" class="animate-email">
+        <div class="form__wrap">
+          <label for="email">
+            <input type="email" placeholder="Enter your email" id="email">
+          </label>
+          <button class="button" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <div class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__desc">
+        <h1>RICK OWENS</h1>
+        <p>Maison Rick Owens — Paris, France</p>
+        <p id="phone">305 - 123 - 4567</p>
+      </div>
+
+      <div class="footer__links">
+        <h2 class="footer__title">Contact</h2>
+        <a href="https://www.rickowens.eu/en/US/customer-service" target="_blank" class="footer__link">Support</a>
+        <a href="https://www.rickowens.eu/en/US/press" target="_blank" class="footer__link">Press Inquiries</a>
+        <a href="https://www.rickowens.eu/en/US/store-locator" target="_blank" class="footer__link">Store Locator</a>
+      </div>
+
+      <div class="footer__links">
+        <h2 class="footer__title">Information</h2>
+        <a href="https://www.rickowens.eu/en/US/privacy" target="_blank" class="footer__link">Privacy Policy</a>
+        <a href="https://www.rickowens.eu/en/US/terms" target="_blank" class="footer__link">Terms of Service</a>
+        <a href="https://www.rickowens.eu/en/US/careers" target="_blank" class="footer__link">Careers</a>
+      </div>
+
+      <div class="footer__links">
+        <h2 class="footer__title">Social</h2>
+        <a href="https://www.instagram.com/rickowensonline/" target="_blank" class="footer__link">Instagram</a>
+        <a href="https://www.youtube.com/@RickOwensOnline" target="_blank" class="footer__link">YouTube</a>
+        <a href="https://twitter.com/officialrickow" target="_blank" class="footer__link">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="./app.js"></script>
   
-  <div class="collection__item">
-    <img src="collection.jpg" class="services_img animate-img" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      feather.replace();
 
- 
-    
-  </div>
+      const emailForm = document.querySelector('form.animate-email');
+      if (emailForm) {
+        emailForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          alert('Thank you for subscribing!');
+        });
+      }
 
-  
-</div>
-    
-    </div>
-
-    <!--membership section-->
-    <div class="membership">
-      <h1 class="animate-membership">Explore Collections</h1>
-      <p class="membership__desc animate-membership">Timeless pieces. Limited releases.</p>
-      <div class="membership__wrapper">
-
-        <div class="membership__card animated-card">
-          <i data-feather="chevron-down"></i>
-          <h2 class="membership__title">Fall / Winter</h2>
-          <p class="membership__desc2">Sculptural silhouettes for colder realms.</p>
-          <button class="membership__btn">View</button>
-        </div>
-      
-        <div class="membership__card animated-card">
-          <i data-feather="chevron-down"></i>
-          <h2 class="membership__title">Spring / Summer</h2>
-          <p class="membership__desc2">Minimalist flow. Freedom in form.</p>
-          <button class="membership__btn">View</button>
-        </div>
-      
-        <div class="membership__card animated-card">
-          <i data-feather="chevron-down"></i>
-          <h2 class="membership__title">Limited Editions</h2>
-          <p class="membership__desc2">Unique, unrepeated masterpieces.</p>
-          <button class="membership__btn">View</button>
-        </div>
-      <!-- Designers Section -->
-<section class="designers">
-  <h1>Meet Our Designers</h1>
-  <p class="designers__desc">Raw elegance and unstructured luxury, redefined for the modern era.</p>
-
-  <div class="designers__wrapper">
-
-    <div class="designer__card animate-designer">
-      <img src="model2.jpg" alt="Model 01" class="designer__img">
-      <h2 class="designer__name">Ash Grey</h2>
-    </div>
-
-    <div class="designer__card animate-designer">
-      <img src="model1.jpg" alt="Model 02" class="designer__img">
-      <h2 class="designer__name">Silas Void</h2>
-    </div>
-
-    <div class="designer__card animate-designer">
-      <img src="model3.jpg" alt="Model 03" class="designer__img">
-      <h2 class="designer__name">Orion Dust</h2>
-    </div>
-
-  </div>
-</section>
-
-      </div>
-      
-    </div>
-<!--email section-->
-<div class="email">
-  <div class="email__content">
-    <h1 class="animate-email">Exclusive Preview</h1>
-    <p class="animate-email">Join to receive early access to unreleased pieces.</p>
-    <form action="#" class="animate-email">
-      <div class="form__wrap">
-        <label for="email">
-          <input type="email" placeholder="Enter your email" id="email">
-        </label>
-        <button class="button" type="submit">Sign Up</button>
-      </div>
-    </form>
-  </div>
-</div>
-<!--footer section-->
-<div class="footer">
-  <div class="footer__wrapper">
-    <div class="footer__desc">
-      <h1>RICK OWENS</h1>
-      <p>Maison Rick Owens — Paris, France</p>
-      <p id="phone">305 - 123 - 4567</p>
-    </div>
-    <div class="footer__links">
-      <h2 class="footer__title">Contact</h2>
-      <a href="https://www.rickowens.eu/en/US/customer-service" target="_blank" class="footer__link">Support</a>
-      <a href="https://www.rickowens.eu/en/US/press" target="_blank" class="footer__link">Press Inquiries</a>
-      <a href="https://www.rickowens.eu/en/US/store-locator" target="_blank" class="footer__link">Store Locator</a>
-    </div>
-    
-    <div class="footer__links">
-      <h2 class="footer__title">Information</h2>
-      <a href="https://www.rickowens.eu/en/US/privacy" target="_blank" class="footer__link">Privacy Policy</a>
-      <a href="https://www.rickowens.eu/en/US/terms" target="_blank" class="footer__link">Terms of Service</a>
-      <a href="https://www.rickowens.eu/en/US/careers" target="_blank" class="footer__link">Careers</a>
-    </div>
-    
-    <div class="footer__links">
-      <h2 class="footer__title">Social</h2>
-      <a href="https://www.instagram.com/rickowensonline/" target="_blank" class="footer__link">Instagram</a>
-      <a href="https://www.youtube.com/@RickOwensOnline" target="_blank" class="footer__link">YouTube</a>
-      <a href="https://twitter.com/officialrickow" target="_blank" class="footer__link">Twitter</a>
-    </div>
-    
-  </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-<script src="./app.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-<script src="./app.js"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    feather.replace();
-
-    // Email form imitation
-    const emailForm = document.querySelector('form.animate-email');
-    if (emailForm) {
-      emailForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you for subscribing!');
+      const allButtons = document.querySelectorAll('.membership__btn, .button');
+      allButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('This feature is coming soon.');
+        });
       });
-    }
 
-    // Buttons imitation
-    const allButtons = document.querySelectorAll('.membership__btn, .button');
-    allButtons.forEach(button => {
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('This feature is coming soon.');
+      const fakeLinks = document.querySelectorAll('a[href="/"]');
+      fakeLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Navigating to this section is not yet available.');
+        });
       });
     });
-
-    // Links imitation
-    const fakeLinks = document.querySelectorAll('a[href="/"]');
-    fakeLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('Navigating to this section is not yet available.');
-      });
-    });
-  });
-</script>
+  </script>
 
 </body>
 </html>
+
