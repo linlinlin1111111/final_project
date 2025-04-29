@@ -199,10 +199,10 @@ font-family: 'Poppins', sans-serif;
 }
 .feather {
     margin-right: 0.5rem; /* отступ справа */
-    color: #000;   /* цвет иконки (можешь поставить свой) */
-    width: 20px;           /* аккуратный размер */
+    color: #000;   
+    width: 20px;           
     height: 20px;
-    vertical-align: middle; /* чтобы иконка шла по центру с текстом */
+    vertical-align: middle; 
   }
 
   @media screen and (max-width: 768px) {
@@ -271,17 +271,65 @@ font-family: 'Poppins', sans-serif;
     margin-bottom: 0.5rem;
   }
   .membership__desc {
-    margin-top: 1.5rem; /* или даже 2rem */
+    margin-top: 1.5rem;
     font-size: 1rem;
     color: #ccc;
     letter-spacing: 1px;
   }
   .membership h1 {
-    margin-bottom: 2rem; /* больше пространства после заголовка */
+    margin-bottom: 2rem; 
     font-size: 2.5rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 3px;
   }
+
+  .designers {
+    background: #000;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .designers__desc {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+    letter-spacing: 1px;
+  }
+  
+  .designers__wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  
+  .designer__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+  
+  
+  .designer__name {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .designer__img {
+    width: 320px;           /* увеличиваем ширину */
+    height: 450px;          /* увеличиваем высоту */
+    object-fit: cover;      /* фото аккуратно обрезается, не растягивается */
+    filter: grayscale(100%); /* черно-белый эффект */
+    border: 1px solid #fff; /* белая тонкая рамка */
+    border-radius: 8px;     /* легкая скругленность углов */
+    margin-bottom: 1.5rem;  
+  }
+  
   
   
